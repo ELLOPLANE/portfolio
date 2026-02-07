@@ -24,7 +24,7 @@ export default function About() {
                         <div className={styles.divider}></div>
                     </div>
                     <p className={styles.bio}>
-                        I am an Economics and Media Analytics student at NTU with hands-on experience in data analytics, visualization, and cross-functional collaboration. I bridge technical insights with stakeholder needs from automating workflows at Robert Bosch, crafting Power BI dashboards for MINDEF, or leading 200-member clubs to new heights through creative partnerships. A curious, hardworking team player hungry to learn more.
+                        I am an Economics and Media Analytics student at NTU with hands-on experience in data analytics, visualization, and cross-functional collaboration. 
                     </p>
                     <p className={styles.bio}>
                         My approach blends technical expertise in Python, SQL, and Power BI with strategic stakeholder collaboration. I believe the best solutions emerge at the intersection of data-driven analysis and business execution.
