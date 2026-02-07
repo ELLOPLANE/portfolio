@@ -4,9 +4,9 @@ import { motion } from 'framer-motion';
 import styles from './About.module.css';
 
 const skills = [
-    'React', 'Next.js', 'Typescript', 'Node.js',
-    'CSS Modules', 'Tailwind CSS', 'Framer Motion',
-    'PostgreSQL', 'GraphQL', 'Docker', 'AWS'
+    'Python', 'SQL', 'Typescript', 'PowerBi',
+    'CSS Modules', 'Tailwind CSS', 'Microsoft Suite',
+    'Canva'
 ];
 
 export default function About() {
