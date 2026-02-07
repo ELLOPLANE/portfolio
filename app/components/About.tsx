@@ -24,10 +24,10 @@ export default function About() {
                         <div className={styles.divider}></div>
                     </div>
                     <p className={styles.bio}>
-                        I am a passionate developer with a keen eye for design and a drive for creating seamless digital experiences. With a background in both frontend and backend technologies, I specialize in building scalable web applications that are not only functional but also visually compelling.
+                        I am an Economics and Media Analytics student at NTU with hands-on experience in data analytics, visualization, and cross-functional collaboration. I bridge technical insights with stakeholder needs from automating workflows at Robert Bosch, crafting Power BI dashboards for MINDEF, or leading 200-member clubs to new heights through creative partnerships. A curious, hardworking team player hungry to learn more.
                     </p>
                     <p className={styles.bio}>
-                        My approach combines technical expertise with creative problem-solving. I believe that the best software is built at the intersection of engineering and design.
+                        My approach blends technical expertise in Python, SQL, and Power BI with strategic stakeholder collaboration. I believe the best solutions emerge at the intersection of data-driven analysis and business execution.
                     </p>
                 </motion.div>
 
