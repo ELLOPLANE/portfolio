@@ -1,0 +1,27 @@
+.footer {
+    padding: 2rem;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    margin-top: 4rem;
+    color: hsl(var(--color-muted-foreground));
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.socialLink {
+    color: hsl(var(--color-muted-foreground));
+    transition: color 0.3s ease;
+}
+
+.socialLink:hover {
+    color: hsl(var(--color-primary));
+}
+
+.copyright {
+    font-size: 0.9rem;
+}
