@@ -48,32 +48,36 @@ export default function Projects() {
                 {projects.map((project, index) => (
                     <motion.div
                         key={index}
-                        className={styles.card}
+                        className={styles.flipCardWrapper}
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: index * 0.1, duration: 0.5 }}
+                        whileHover={{ rotateY: 180 }}  // Flip on hover!
+                        style={{ perspective: '1000px' }}
                     >
-                        <div className={styles.imageFrame}>
-                            {/* Placeholder for image - using a colored div for now since we don't have images */}
-                            <div style={{ width: '100%', height: '100%', background: `hsl(${220 + index * 40}, 60%, 20%)`, display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', opacity: 0.5 }}>
-                                Project Preview {index + 1}
-                            </div>
-                        </div>
-                        <div className={styles.content}>
-                            <h3 className={styles.title}>{project.title}</h3>
-                            <p className={styles.description}>{project.description}</p>
-                            <div className={styles.tags}>
-                                {project.tags.map(tag => (
-                                    <span key={tag} className={styles.tag}>{tag}</span>
-                                ))}
-                            </div>
-                            <div className={styles.links}>
-                                <a href={project.links.github} className={styles.linkButton} target="_blank" rel="noopener noreferrer">
-                                    <Github size={18} /> Code
-                                </a>
-                                <a href={project.links.live} className={styles.linkButton} target="_blank" rel="noopener noreferrer">
-                                    <ExternalLink size={18} /> Live Demo
+                       <div className={styles.flipCard}>
+    {/* FRONT SIDE */}
+    <div className={styles.cardFront}>
+      <div className={styles.imageFrame}>
+        <div style={{ 
+          width: '100%', height: '100%', 
+          background: `hsl(${220 + index * 40}, 60%, 20%)`,
+          display: 'flex', alignItems: 'center', 
+          justifyContent: 'center', color: '#fff', opacity: 0.5 
+        }}>
+          Project Preview {index + 1}
+        </div>
+      </div>
+      <div className={styles.content}>
+        <h3 className={styles.title}>{project.title}</h3>
+        <p className={styles.description}>{project.description}</p>
+        <div className={styles.links}>
+          <a href={project.links.github} className={styles.linkButton} target="_blank" rel="noopener noreferrer">
+            <Github size={18} /> Code
+          </a>
+          <a href={project.links.live} className={styles.linkButton} target="_blank" rel="noopener noreferrer">
+            <ExternalLink size={18} /> Live Demo
                                 </a>
                             </div>
                         </div>
