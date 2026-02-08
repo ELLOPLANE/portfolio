@@ -11,7 +11,7 @@ const projects = [
         description: 'A full-stack e-commerce solution with Next.js, Stripe integration, and real-time inventory management.',
         tags: ['Next.js', 'Stripe', 'Tailwind', 'PostgreSQL'],
         links: { github: '#', live: '#' },
-        image: '/project1.jpg' // Placeholder
+        image: '/project1.jpg', // Placeholder
         backContent: 'hi'
     },
     {
@@ -101,8 +101,7 @@ export default function Projects() {
           <a href={project.links.live} className={styles.linkButton} target="_blank" rel="noopener noreferrer">
             <ExternalLink size={18} /> Live Demo
           </a>
-        </div>
-      </div>
+              </div>
     </div>
   </div>
 </motion.div>
