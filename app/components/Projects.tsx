@@ -12,6 +12,7 @@ const projects = [
         tags: ['Next.js', 'Stripe', 'Tailwind', 'PostgreSQL'],
         links: { github: '#', live: '#' },
         image: '/project1.jpg' // Placeholder
+        backContent: 'hi'
     },
     {
         title: 'Task Management App',
@@ -104,7 +105,9 @@ export default function Projects() {
       </div>
     </div>
   </div>
-
+</motion.div>
+  ))}
+</div>
         </section>
     );
 }
