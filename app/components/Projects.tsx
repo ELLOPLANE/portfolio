@@ -93,6 +93,18 @@ export default function Projects() {
             <span key={tag} className={styles.tag}>{tag}</span>
           ))}
         </div>
+  <div className={styles.links}>
+          <a href={project.links.github} className={styles.linkButton} target="_blank" rel="noopener noreferrer">
+            <Github size={18} /> Code
+          </a>
+          <a href={project.links.live} className={styles.linkButton} target="_blank" rel="noopener noreferrer">
+            <ExternalLink size={18} /> Live Demo
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</motion.div>
         </section>
     );
 }
