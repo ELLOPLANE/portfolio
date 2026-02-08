@@ -79,11 +79,20 @@ export default function Projects() {
           <a href={project.links.live} className={styles.linkButton} target="_blank" rel="noopener noreferrer">
             <ExternalLink size={18} /> Live Demo
                                 </a>
-                            </div>
-                        </div>
-                    </motion.div>
-                ))}
-            </div>
+        </div>
+      </div>
+    </div>
+
+    {/* BACK SIDE */}
+    <div className={styles.cardBack}>
+      <div className={styles.backContent}>
+        <h3 className={styles.title}>{project.title}</h3>
+        <p className={styles.backDescription}>{project.backContent}</p>
+        <div className={styles.tags}>
+          {project.tags.map(tag => (
+            <span key={tag} className={styles.tag}>{tag}</span>
+          ))}
+        </div>
         </section>
     );
 }
