@@ -5,9 +5,9 @@ import { Github, ExternalLink } from 'lucide-react';
 import Image from 'next/image';
 import styles from './Projects.module.css';
 
-const projects = [
+const experiences = [
     {
-        title: 'E-Commerce Platform',
+        title: 'Sales Logisitics Operations and Data Analysis',
         description: 'A full-stack e-commerce solution with Next.js, Stripe integration, and real-time inventory management.',
         tags: ['Next.js', 'Stripe', 'Tailwind', 'PostgreSQL'],
         links: { github: '#', live: '#' },
@@ -15,14 +15,14 @@ const projects = [
         backContent: 'hi'
     },
     {
-        title: 'Task Management App',
+        title: 'Mass Communications Analyst',
         description: 'A collaborative task manager featuring drag-and-drop boards, real-time updates, and team permissions.',
         tags: ['React', 'Firebase', 'Framer Motion'],
         links: { github: '#', live: '#' },
         image: '/project2.jpg' // Placeholder
     },
     {
-        title: 'AI Dashboard',
+        title: 'Data Visualisation and Financial Analysis',
         description: 'An analytics dashboard powered by AI to visualize data trends and predict future metrics.',
         tags: ['Python', 'FastAPI', 'D3.js', 'Next.js'],
         links: { github: '#', live: '#' },
