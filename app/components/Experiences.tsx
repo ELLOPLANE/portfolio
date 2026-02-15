@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import { Github, ExternalLink } from 'lucide-react';
 import Image from 'next/image';
-import styles from './Projects.module.css';
+import styles from './Experiences.module.css';
 
 const experiences = [
     {
@@ -30,9 +30,9 @@ const experiences = [
     },
 ];
 
-export default function Projects() {
+export default function Experiences() {
     return (
-        <section id="projects" className={styles.section}>
+        <section id="experiences" className={styles.section}>
             <div className={styles.headingWrapper}>
                 <motion.h2
                     className={styles.h2}
@@ -46,7 +46,7 @@ export default function Projects() {
             </div>
 
             <div className={styles.grid}>
-                {projects.map((project, index) => (
+                {experiences.map((experiences, index) => (
                     <motion.div
                         key={index}
                         className={styles.flipCardWrapper}
@@ -67,17 +67,17 @@ export default function Projects() {
           display: 'flex', alignItems: 'center', 
           justifyContent: 'center', color: '#fff', opacity: 0.5 
         }}>
-          Project Preview {index + 1}
+          experiences Preview {index + 1}
         </div>
       </div>
       <div className={styles.content}>
-        <h3 className={styles.title}>{project.title}</h3>
-        <p className={styles.description}>{project.description}</p>
+        <h3 className={styles.title}>{experiences.title}</h3>
+        <p className={styles.description}>{experiences.description}</p>
         <div className={styles.links}>
-          <a href={project.links.github} className={styles.linkButton} target="_blank" rel="noopener noreferrer">
+          <a href={experiences.links.github} className={styles.linkButton} target="_blank" rel="noopener noreferrer">
             <Github size={18} /> Code
           </a>
-          <a href={project.links.live} className={styles.linkButton} target="_blank" rel="noopener noreferrer">
+          <a href={experiences.links.live} className={styles.linkButton} target="_blank" rel="noopener noreferrer">
             <ExternalLink size={18} /> Live Demo
                                 </a>
         </div>
@@ -87,18 +87,18 @@ export default function Projects() {
     {/* BACK SIDE */}
     <div className={styles.cardBack}>
       <div className={styles.backContent}>
-        <h3 className={styles.title}>{project.title}</h3>
-        <p className={styles.backDescription}>{project.backContent}</p>
+        <h3 className={styles.title}>{experiences.title}</h3>
+        <p className={styles.backDescription}>{experiences.backContent}</p>
         <div className={styles.tags}>
-          {project.tags.map(tag => (
+          {experiences.tags.map(tag => (
             <span key={tag} className={styles.tag}>{tag}</span>
           ))}
         </div>
   <div className={styles.links}>
-          <a href={project.links.github} className={styles.linkButton} target="_blank" rel="noopener noreferrer">
+          <a href={experiences.links.github} className={styles.linkButton} target="_blank" rel="noopener noreferrer">
             <Github size={18} /> Code
           </a>
-          <a href={project.links.live} className={styles.linkButton} target="_blank" rel="noopener noreferrer">
+          <a href={experiences.links.live} className={styles.linkButton} target="_blank" rel="noopener noreferrer">
             <ExternalLink size={18} /> Live Demo
           </a>
               </div>
