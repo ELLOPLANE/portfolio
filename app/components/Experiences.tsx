@@ -11,7 +11,7 @@ const experiences = [
         description: 'A full-stack e-commerce solution with Next.js, Stripe integration, and real-time inventory management.',
         tags: ['Next.js', 'Stripe', 'Tailwind', 'PostgreSQL'],
         links: { github: '#', live: '#' },
-        image: '/project1.jpg', // Placeholder
+        image: '', // Placeholder
         backContent: 'hi'
     },
     {
@@ -19,14 +19,14 @@ const experiences = [
         description: 'A collaborative task manager featuring drag-and-drop boards, real-time updates, and team permissions.',
         tags: ['React', 'Firebase', 'Framer Motion'],
         links: { github: '#', live: '#' },
-        image: '/project2.jpg' // Placeholder
+        image: '' // Placeholder
     },
     {
         title: 'Data Visualisation and Financial Analysis',
         description: 'An analytics dashboard powered by AI to visualize data trends and predict future metrics.',
         tags: ['Python', 'FastAPI', 'D3.js', 'Next.js'],
         links: { github: '#', live: '#' },
-        image: '/project3.jpg' // Placeholder
+        image: '' // Placeholder
     },
 ];
 
@@ -72,13 +72,13 @@ export default function Experiences() {
       </div>
       
       <div className={styles.content}>
-        <h3 className={styles.title}>{experiences.title}</h3>
-        <p className={styles.description}>{experiences.description}</p>
+        <h3 className={styles.title}>{experience.title}</h3>
+        <p className={styles.description}>{experience.description}</p>
         <div className={styles.links}>
-          <a href={experiences.links.github} className={styles.linkButton} target="_blank" rel="noopener noreferrer">
+          <a href={experience.links.github} className={styles.linkButton} target="_blank" rel="noopener noreferrer">
             <Github size={18} /> Code
           </a>
-          <a href={experiences.links.live} className={styles.linkButton} target="_blank" rel="noopener noreferrer">
+          <a href={experience.links.live} className={styles.linkButton} target="_blank" rel="noopener noreferrer">
             <ExternalLink size={18} /> Live Demo
                                 </a>
         </div>
@@ -88,18 +88,18 @@ export default function Experiences() {
     {/* BACK SIDE */}
     <div className={styles.cardBack}>
       <div className={styles.backContent}>
-        <h3 className={styles.title}>{experiences.title}</h3>
-        <p className={styles.backDescription}>{experiences.backContent}</p>
+        <h3 className={styles.title}>{experience.title}</h3>
+        <p className={styles.backDescription}>{experience.backContent}</p>
         <div className={styles.tags}>
-          {experiences.tags.map(tag => (
+          {experience.tags.map(tag => (
             <span key={tag} className={styles.tag}>{tag}</span>
           ))}
         </div>
   <div className={styles.links}>
-          <a href={experiences.links.github} className={styles.linkButton} target="_blank" rel="noopener noreferrer">
+          <a href={experience.links.github} className={styles.linkButton} target="_blank" rel="noopener noreferrer">
             <Github size={18} /> Code
           </a>
-          <a href={experiences.links.live} className={styles.linkButton} target="_blank" rel="noopener noreferrer">
+          <a href={experience.links.live} className={styles.linkButton} target="_blank" rel="noopener noreferrer">
             <ExternalLink size={18} /> Live Demo
           </a>
               </div>
