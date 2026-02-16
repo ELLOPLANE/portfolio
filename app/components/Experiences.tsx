@@ -46,7 +46,7 @@ export default function Experiences() {
             </div>
 
             <div className={styles.grid}>
-                {experiences.map((experiences, index) => (
+                {experiences.map((experience, index) => (
                     <motion.div
                         key={index}
                         className={styles.flipCardWrapper}

@@ -95,6 +95,7 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
+    min-height: 400px;
 }
 
 @media (min-width: 768px) {

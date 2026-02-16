@@ -19,6 +19,14 @@
   
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
   --font-heading: 'Outfit', sans-serif;
+
+  --foreground: 0 0% 98%;
+  --color-primary: 221 83% 53%;
+  --color-muted: 210 40% 96%;
+  --color-muted-foreground: 215 20.2% 65.1%;
+  --glass-bg: 0 0% 100%;
+  --glass-border: 215 20.2% 65.1%;
+  --radius-lg: 0.75rem;
 }
 
 * {
