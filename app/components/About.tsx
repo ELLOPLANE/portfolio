@@ -37,7 +37,7 @@ export default function About() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.6, delay: 0.2 }}
                 >
-                    <h3 className={styles.h3}>Skills & Technologies</h3>
+                    <h3 className={styles.h3}>Skills</h3>
                     <div className={styles.skillsContainer}>
                         {skills.map((skill, index) => (
                             <motion.span

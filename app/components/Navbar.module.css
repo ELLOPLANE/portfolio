@@ -28,7 +28,7 @@
     font-family: var(--font-heading);
     font-weight: 700;
     font-size: 1.5rem;
-    color: hsl(var(--color-foreground));
+    color: #2d3748;
     text-decoration: none;
     background: linear-gradient(to right, hsl(var(--color-primary)), hsl(var(--color-secondary)));
     -webkit-background-clip: text;
@@ -45,6 +45,7 @@
     display: flex;
     gap: 2rem;
     align-items: center;
+    color: #4a5568 ;
 }
 
 .link {
@@ -79,7 +80,7 @@
     display: none;
     background: none;
     border: none;
-    color: hsl(var(--color-foreground));
+    color: #4a5568;
     cursor: pointer;
 }
 

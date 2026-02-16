@@ -21,7 +21,7 @@ export default function Navbar() {
 
     const links = [
         { name: 'About', href: '#about' },
-        { name: 'Projects', href: '#projects' },
+        { name: 'Experiences', href: '#Experiences' },
         { name: 'Contact', href: '#contact' },
     ];
 
@@ -34,7 +34,7 @@ export default function Navbar() {
                     transition={{ duration: 0.5 }}
                 >
                     <Link href="/" className={styles.logo}>
-                        Portfolio.
+                        Renes Koh
                     </Link>
                 </motion.div>
 
