@@ -9,15 +9,16 @@ const skills = [
   'CSS Modules', 'Tailwind CSS', 'Microsoft Suite',
   'Canva'
 ];
+const NTU = {
+    icon: GraduationCap,
+  title: 'Economics & Media Analytics',
+  subtitle: 'Nanyang Technological University',
+  period: '2022 - 2027',
+};
+
 
 const experiences = [  // ← NEW: Swipeable job cards
-  {
-    icon: GraduationCap,
-    title: 'Economics & Media Analytics',
-    subtitle: 'NTU Singapore',
-    period: '2023 - Present',
-    content: 'Data analytics, visualization, Python, SQL, Power BI, financial modeling.',
-  },
+ 
   {
     icon: Briefcase,
     title: 'Sales Logistics Operations',
@@ -38,7 +39,7 @@ export default function About() {
   return (
     <section id="about" className={styles.section}>
       <div className={styles.container}>
-        {/* EXISTING BIO + SKILLS (unchanged) */}
+        
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -49,9 +50,14 @@ export default function About() {
             <h2 className={styles.h2}>About Me</h2>
             <div className={styles.divider}></div>
           </div>
-          <p className={styles.bio}>
-            I am an Economics and Media Analytics student at NTU with hands-on experience in data analytics, visualization, and cross-functional collaboration. 
-          </p>
+           <div className={styles.experienceCard}>
+            <div className={styles.expIcon}>
+              <GraduationCap size={32} />
+            </div>
+            <h3 className={styles.expTitle}>{NTU.title}</h3>
+            <p className={styles.expSubtitle}>{NTU.subtitle}</p>
+            <p className={styles.expPeriod}>{NTU.period}</p>
+          </div>
           <p className={styles.bio}>
             My approach blends technical expertise in Python, SQL, and Power BI with strategic stakeholder collaboration. I believe the best solutions emerge at the intersection of data-driven analysis and business execution.
           </p>
