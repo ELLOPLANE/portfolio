@@ -70,6 +70,7 @@ export default function Experiences() {
           experiences Preview {index + 1}
         </div>
       </div>
+      
       <div className={styles.content}>
         <h3 className={styles.title}>{experiences.title}</h3>
         <p className={styles.description}>{experiences.description}</p>
@@ -103,6 +104,7 @@ export default function Experiences() {
           </a>
               </div>
     </div>
+  </div>
   </div>
 </motion.div>
   ))}
